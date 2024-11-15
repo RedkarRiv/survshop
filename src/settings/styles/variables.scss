@@ -1,0 +1,67 @@
+// _variables.scss
+
+// Colores
+$primary-color: #075a92;        
+$secondary-color: #d8f3fd;      
+$tertiary-color: #d84910;       
+$background-color: #f4f4f4;     
+$text-color: #333333;           
+$border-color: #dddddd;         
+
+// Colores neutros
+$white: #ffffff;
+$black: #000000;
+$gray-light: #dcdcdc;           // Gris claro
+$gray-dark: #7f8c8d;            // Gris oscuro
+
+// Fuentes
+$primary-font: 'Roboto', sans-serif;  // Fuente principal
+$secondary-font: 'Arial', sans-serif; // Fuente secundaria
+$heading-font: 'Montserrat', sans-serif; // Fuente para encabezados
+
+// Tamaños de fuente (en px)
+$font-size-base: 12px;         // Tamaño base de fuente
+$font-size-lg: 18px;           // Tamaño grande
+$font-size-sm: 14px;           // Tamaño pequeño
+
+// Altura de línea
+$line-height-base: 1.5;        // Altura de línea estándar
+$line-height-lg: 1.6;          // Altura de línea grande
+$line-height-sm: 1.4;          // Altura de línea pequeña
+
+// Pesos de fuente
+$regular: 400;     // Peso normal
+$bold: 700;        // Peso negrita
+$superbold: 900;        // Peso negrita
+
+// Espaciado (en px)
+$spacing-xs: 4px;              // Espaciado pequeño
+$spacing-sm: 8px;              // Espaciado medio
+$spacing-md: 16px;             // Espaciado grande
+$spacing-lg: 32px;             // Espaciado extra grande
+
+// Bordes
+$border-radius: 4px;           // Radio de borde estándar
+$border-radius-lg: 8px;        // Radio de borde grande
+
+// Sombra
+$box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  // Sombra ligera
+$box-shadow-hover: 0px 4px 12px rgba(0, 0, 0, 0.2); // Sombra en hover
+
+// Z-Index
+$z-index-modal: 1050;          // Z-index para modales
+$z-index-dropdown: 1000;       // Z-index para dropdowns
+$z-index-overlay: 500;         // Z-index para overlays
+
+// Breakpoints para responsive design
+$breakpoint-sm: 576px;         // Móvil
+$breakpoint-md: 768px;         // Tableta
+$breakpoint-lg: 992px;         // Pantalla grande
+$breakpoint-xl: 1200px;        // Pantallas extra grandes
+
+// Transiciones
+$transition-duration: 0.3s;     // Duración de transiciones
+$transition-ease: ease-in-out; // Efecto de transición
+
+// Fix
+$navbar-height: 5rem;

@@ -1,0 +1,46 @@
+@import '@settings/styles/variables';
+@import '@settings/styles/mixins';
+
+
+.navbar {
+  background-color: $primary-color;
+  height: $navbar-height;
+  width: 100%;
+  padding-inline: 2rem;
+  position:fixed;
+  @include flex($justify-content: space-around);
+  z-index: 1;
+  .linkList, .iconsList {
+    list-style: none;
+    gap:$spacing-lg;
+    @include flex();
+  }
+  .linkList {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  .iconsList {
+    width: 25%;
+    justify-content: end;
+    .avatar {
+      @include font($font-weight:$superbold)
+    }
+    .session {
+      @include font($font-weight:$superbold, $text-decoration:underline)
+    }
+  }
+  .avatar, .session {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .logoContainer {
+    width: 25%;
+    @include flex();
+    .logo {
+      width: fit-content;
+    }
+    
+  }
+}

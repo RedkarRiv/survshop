@@ -1,0 +1,104 @@
+@import '@settings/styles/variables';
+@import '@settings/styles/mixins';
+
+.swiperContainer {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+
+  .imageWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .imgButton {
+      z-index: 2;
+      @include button();
+      position: absolute;
+      left: 15%;
+      bottom: 30%;
+    }
+
+    
+    .imgTitle {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: 900;
+      left: 15%;
+      top: 25%;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .imgDescription {
+      position: absolute;
+      font-size: 1rem;
+      font-weight: 600;
+      left: 15%;
+      top: 40%;
+      width: 50%;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: opacity 1s ease-in-out;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .navButton {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-inline: 10px;
+    font-size: 20px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+      transform: scale(1.1);
+    }
+  }
+
+  .prevButton {
+    left: 20px;
+  }
+
+  .nextButton {
+    right: 20px;
+  }
+
+  .breadcrumbs {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    .breadcrumb {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+  
+    .breadcrumb.active {
+      background-color: white;
+    }
+  }
+}

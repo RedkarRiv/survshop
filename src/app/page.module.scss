@@ -1,0 +1,9 @@
+@import '@settings/styles/variables';
+@import '@settings/styles/mixins';
+
+.page {
+    background-color: $secondary-color;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: $navbar-height;
+}
